@@ -1,10 +1,17 @@
 <template>
   <div id="app">
-    <left-menu></left-menu>
-    <!--<router-view/>-->
-    <button class="ui button">
-      Follow
-    </button>
+    <div style="display: flex; max-width: 1200px">
+      <div class="hidden-xs" style="margin: 5px">
+        <left-menu></left-menu>
+      </div>
+      <div style="background-color: #0E566C;">
+        <router-view/>
+      </div>
+      <div class="visible-md visible-lg" style="margin: 5px">
+        <left-menu></left-menu>
+      </div>
+    </div>
+
   </div>
 </template>
 
@@ -21,7 +28,10 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
+  /*.hidden-xs, .visible-lg {*/
+    /*display: inline-block !important;*/
+  /*}*/
+
 </style>

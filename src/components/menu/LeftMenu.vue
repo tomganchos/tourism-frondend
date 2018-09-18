@@ -67,7 +67,7 @@
 <style scoped>
   .vertical.menu {
     width: 275px;
-    margin: 5px;
+    /*margin: 5px;*/
   }
   .vertical.menu a.item {
     background-color: #337ab7;
