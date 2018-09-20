@@ -47,13 +47,13 @@ export default {
   color: #2c3e50;
 }
 .center-menu {
-  background-color: #0E566C;
+  /*background-color: #0E566C;*/
   width: 100%;
   margin: 5px;
 }
 @media screen and (max-width: 768px) {
   .center-menu {
-    margin-top: 40px;
+    margin-top: 50px;
   }
 }
   /*.hidden-xs, .visible-lg {*/

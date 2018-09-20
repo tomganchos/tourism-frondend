@@ -1,6 +1,8 @@
 <template>
     <div>
-      Новости
+      <div class="ui segment">
+        <div class="ui medium header">Последние новости</div>
+      </div>
     </div>
 </template>
 
@@ -11,5 +13,7 @@
 </script>
 
 <style scoped>
-
+  .ui.medium.header {
+    color: #204d74;
+  }
 </style>
