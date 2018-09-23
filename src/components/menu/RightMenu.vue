@@ -11,7 +11,7 @@
 
       </div>
 
-      <a class="item">
+      <a class="item first">
         <div class="link-img">
           <img src="http://turizmpskov.ru/image/links/Min_obr_i_nauki.png">
         </div>
@@ -83,7 +83,13 @@
     text-align: -webkit-center;
     text-align: center;
     display: flex;
+    line-height: 1.3;
   }
+
+  .vertical.menu a.item.first {
+    margin-top: 15px;
+  }
+
   .vertical.menu a.item:hover {
     background-color: #286090;
     border-color: #204d74;
@@ -94,10 +100,16 @@
     border-color: #122b40;
     color: #fff;
   }
+  .vertical.menu a.item:active {
+    background-color: #204d74;
+    border-color: #122b40;
+    color: #fff;
+  }
 
   .vertical.menu a.item .link-img {
     width: 50px;
-    display: inline-block;
+    display: flex;
+    align-items: center;
   }
   .vertical.menu a.item .link-img img {
     width: 50px;
@@ -105,8 +117,6 @@
   .vertical.menu a.item .link-text {
     width: 191px;
     display: flex;
-    /*flex-direction: column;*/
-    /*justify-content: center;*/
     align-items: center;
   }
 </style>

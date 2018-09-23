@@ -12,11 +12,11 @@
 
       <div class="ui menu visible-xs" style="width: 100%; position: fixed; margin-left: -5px; margin-top: 1px; border-radius: 0 0 .28571429rem .28571429rem;">
         <a class="header item" style="display: inline-block">
-          Бургер
+          <i class="bars icon"></i>
         </a>
-        <a class="item" style="display: inline-block">
-          Лого
-        </a>
+        <!--<router-link to="/" class="item">-->
+          <!--<img src="http://turizmpskov.ru/image/logoTurizm/logoTurizm2.png" height="40px">-->
+        <!--</router-link>-->
       </div>
 
       <div class="center-menu">
@@ -45,6 +45,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  background-color: #edeef0;
 }
 .center-menu {
   /*background-color: #0E566C;*/
@@ -55,6 +56,9 @@ export default {
   .center-menu {
     margin-top: 50px;
   }
+}
+.bars.icon {
+  margin: 0 !important;
 }
   /*.hidden-xs, .visible-lg {*/
     /*display: inline-block !important;*/

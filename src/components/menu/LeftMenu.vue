@@ -1,21 +1,21 @@
 <template>
     <div class="ui left vertical menu">
       <router-link to="/" class="item" style="text-align: -webkit-center">
-        <img src="http://turizmpskov.ru/image/logoTurizm/logoTurizm2.png" alt="" height="150px">
+        <img src="http://turizmpskov.ru/image/logoTurizm/logoTurizm2.png" height="150px">
       </router-link>
       <a class="item">
         <i class="low vision icon" style="float: none"></i><span> Версия для слабовидящих</span>
       </a>
       <a class="item">
-        <span style="margin: auto;"><i class="caret down icon"></i></span>
+        <i class="angle down"></i>
         <span>Сведения об образовательной организации</span>
       </a>
       <a class="item">
-        <span style="margin: auto;"><i class="caret down icon"></i></span>
+        <i class="angle down"></i>
         <span>Руководство. Педагогический состав. Сотрудники</span>
       </a>
       <a class="item">
-        <span style="margin: auto;"><i class="caret down icon"></i></span>
+        <i class="angle down"></i>
         <span>Отделы Центра</span>
       </a>
       <router-link to="touristroutes" class="item">
@@ -45,7 +45,7 @@
       <router-link to="gallery" class="item">
         <span>Фотогалерея</span>
       </router-link>
-      <router-link to="methlibrary" class="item">
+      <router-link to="meth-library" class="item">
         <span>Методическая библиотека</span>
       </router-link>
       <router-link to="anticorruption" class="item">
@@ -76,6 +76,7 @@
     text-align: -moz-center;
     text-align: -webkit-center;
     text-align: center;
+    line-height: 1.3;
   }
   .vertical.menu a.item:hover {
     background-color: #286090;
@@ -83,6 +84,11 @@
     color: #fff;
   }
   .vertical.menu a.item:focus {
+    background-color: #204d74;
+    border-color: #122b40;
+    color: #fff;
+  }
+  .vertical.menu a.item:active {
     background-color: #204d74;
     border-color: #122b40;
     color: #fff;

@@ -1,16 +1,16 @@
 <template>
     <div>
-      <div class="ui segment head">
-        <div class="ui large header">Методическая библиотека</div>
+      <div class="ui segment head hidden-xs">
+        <div class="ui medium header">{{header}}</div>
       </div>
       <div class="ui segment body">
         <div class="ui relaxed divided list">
-          <div class="item">
+          <div class="item" v-for="doc in docs" :key="doc.name">
             <div class="item-icon">
               <i class="file alternate outline icon"></i>
             </div>
             <div class="content">
-              <a class="header" href="https://drive.google.com/file/d/0B4Y-eduzf4rjaDdWWmRqMUVEZWM/view?usp=sharing" target="_blank" rel="noopener">Методические рекомендации по организации научно-исследовательской деятельности обучающихся</a>
+              <a class="header" v-bind:href="doc.link" target="_blank" rel="noopener">{{doc.name}}</a>
             </div>
           </div>
         </div>
@@ -19,8 +19,36 @@
 </template>
 
 <script>
+  import axios from 'axios';
+  const host = 'http://localhost:3012';
+
     export default {
-        name: "MethLibraryPage"
+      name: "MethLibraryPage",
+      data() {
+        return {
+          header: 'Методическая библиотека',
+          docs: []
+        }
+      },
+      created() {
+        this.getDocs();
+      },
+      methods: {
+        getDocs() {
+          axios.get(host + '/docs?category=meth-library')
+            .then(response => {
+              this.docs = response.data.map((item) => {
+                console.log(item);
+                return {
+                  name: item.name,
+                  link: item.link,
+                  category: item.category
+                }
+              })
+            });
+          console.log(this.docs);
+        }
+      }
     }
 </script>
 
