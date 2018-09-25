@@ -48,7 +48,7 @@
       <router-link to="meth-library" class="item">
         <span>Методическая библиотека</span>
       </router-link>
-      <router-link to="anticorruption" class="item">
+      <router-link to="anti-corruption" class="item">
         <span>Противодействие коррупции</span>
       </router-link>
       <router-link to="contacts" class="item">

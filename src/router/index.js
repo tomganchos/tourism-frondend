@@ -3,10 +3,11 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import News from '@/components/News'
 import MethLibraryPage from '@/components/MethLibraryPage'
+import AntiCorruption from '@/components/AntiCorruption'
 import ContactsPage from '@/components/ContactsPage'
 import Page404 from '@/components/Page404'
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   mode: 'history',
@@ -20,6 +21,11 @@ export default new Router({
       path: '/meth-library',
       name: 'MethLibraryPage',
       component: MethLibraryPage
+    },
+    {
+      path: '/anti-corruption',
+      name: 'AntiCorruption',
+      component: AntiCorruption
     },
     {
       path: '/contacts',
