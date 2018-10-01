@@ -11,7 +11,7 @@
           </div>
           <div class="content">
             <a class="header" v-bind:href="doc.link" target="_blank" rel="noopener">{{doc.name}}</a>
-            <div class="description">{{doc.date}} | {{doc.journal}}</div>
+            <div class="description">{{doc.date | moment('DD.MM.YYYY')}} | {{doc.journal}}</div>
           </div>
         </div>
       </div>
@@ -21,6 +21,7 @@
 
 <script>
   import axios from 'axios';
+  let moment = require('moment');
   const host = 'http://localhost:3012';
     export default {
       name: "PublicationPage",

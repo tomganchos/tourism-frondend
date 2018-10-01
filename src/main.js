@@ -7,7 +7,8 @@ import router from './router'
 import './assets/semantic/dist/semantic.min.css'
 import './assets/semantic/dist/semantic.min.js'
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
+Vue.use(require('vue-moment'));
 
 /* eslint-disable no-new */
 new Vue({
