@@ -6,6 +6,30 @@
       <a class="item">
         <i class="low vision icon" style="float: none"></i><span> Версия для слабовидящих</span>
       </a>
+      <div class="ui accordion">
+        <a class="title item">
+          <i class="dropdown icon"></i>
+          <span>Сведения об образовательной организации</span>
+        </a>
+        <div class="content">
+          <p class="transition visible" style="display: block !important;">A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.</p>
+        </div>
+        <a class="title item">
+          <i class="dropdown icon"></i>
+          <span>Сведения об образовательной организации</span>
+        </a>
+        <div class="content">
+          <p class="transition hidden">There are many breeds of dogs. Each breed varies in size and temperament. Owners often select a breed of dog that they find to be compatible with their own lifestyle and desires from a companion.</p>
+        </div>
+        <a class="title item">
+          <i class="dropdown icon"></i>
+          <span>Руководство. Педагогический состав. Сотрудники</span>
+        </a>
+        <div class="content">
+          <p>Three common ways for a prospective owner to acquire a dog is from pet shops, private owners, or shelters.</p>
+          <p>A pet shop may be the most convenient way to buy a dog. Buying a dog from a private owner allows you to assess the pedigree and upbringing of your dog before choosing to take it home. Lastly, finding your dog from a shelter, helps give a good home to a dog who may not find one so readily.</p>
+        </div>
+      </div>
       <a class="item">
         <i class="angle down"></i>
         <span>Сведения об образовательной организации</span>
@@ -60,7 +84,13 @@
 
 <script>
     export default {
-        name: "LeftMenu"
+        name: "LeftMenu",
+
+      mounted() {
+        $('.ui.accordion')
+          .accordion()
+        ;
+      }
     }
 </script>
 
