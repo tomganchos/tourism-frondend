@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import News from '@/components/News'
+import PublicationPage from '@/components/PublicationPage'
 import MethLibraryPage from '@/components/MethLibraryPage'
 import AntiCorruption from '@/components/AntiCorruption'
 import ContactsPage from '@/components/ContactsPage'
@@ -16,6 +17,11 @@ export default new Router({
       path: '/',
       name: 'News',
       component: News
+    },
+    {
+      path: '/publications',
+      name: 'PublicationPage',
+      component: PublicationPage
     },
     {
       path: '/meth-library',
