@@ -197,4 +197,7 @@
     padding-top: 0 !important;
     padding-bottom: 0 !important;
   }
+  .ui.accordion .title:not(.ui) {
+    padding: .92857143em 1.14285714em;
+  }
 </style>
