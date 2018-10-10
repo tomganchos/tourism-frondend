@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import News from '@/components/News'
+import DocumentsOfCenter from '@/components/DocumentsOfCenter'
 import MaterialTechProvision from '@/components/MaterialTechProvision'
 import PublicationPage from '@/components/PublicationPage'
 import MethLibraryPage from '@/components/MethLibraryPage'
@@ -18,6 +19,11 @@ export default new Router({
       path: '/',
       name: 'News',
       component: News
+    },
+    {
+      path: '/documents-of-center',
+      name: 'DocumentsOfCenter',
+      component: DocumentsOfCenter
     },
     {
       path: '/material-tech-provision',
