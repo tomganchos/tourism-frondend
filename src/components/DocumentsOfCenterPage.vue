@@ -26,7 +26,7 @@
   const host = 'http://localhost:3012';
 
     export default {
-      name: "DocumentsOfCenter",
+      name: "DocumentsOfCenterPage",
       data() {
         return {
           header: 'Документы Центра',

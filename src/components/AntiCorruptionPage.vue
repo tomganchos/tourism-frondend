@@ -25,7 +25,7 @@
   import axios from 'axios';
   const host = 'http://localhost:3012';
   export default {
-    name: "AntiCorruption",
+    name: "AntiCorruptionPage",
     data() {
       return {
         header: 'Противодействие коррупции',

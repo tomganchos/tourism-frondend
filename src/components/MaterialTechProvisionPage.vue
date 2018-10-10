@@ -243,7 +243,7 @@
 
 <script>
     export default {
-        name: "MaterialTechProvision"
+        name: "MaterialTechProvisionPage"
     }
 </script>
 

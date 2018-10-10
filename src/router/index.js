@@ -2,11 +2,11 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import News from '@/components/News'
-import DocumentsOfCenter from '@/components/DocumentsOfCenter'
-import MaterialTechProvision from '@/components/MaterialTechProvision'
+import DocumentsOfCenterPage from '@/components/DocumentsOfCenterPage'
+import MaterialTechProvisionPage from '@/components/MaterialTechProvisionPage'
 import PublicationPage from '@/components/PublicationPage'
 import MethLibraryPage from '@/components/MethLibraryPage'
-import AntiCorruption from '@/components/AntiCorruption'
+import AntiCorruptionPage from '@/components/AntiCorruptionPage'
 import ContactsPage from '@/components/ContactsPage'
 import Page404 from '@/components/Page404'
 
@@ -22,13 +22,13 @@ export default new Router({
     },
     {
       path: '/documents-of-center',
-      name: 'DocumentsOfCenter',
-      component: DocumentsOfCenter
+      name: 'DocumentsOfCenterPage',
+      component: DocumentsOfCenterPage
     },
     {
       path: '/material-tech-provision',
-      name: 'MaterialTechProvision',
-      component: MaterialTechProvision
+      name: 'MaterialTechProvisionPage',
+      component: MaterialTechProvisionPage
     },
     {
       path: '/publications',
@@ -42,8 +42,8 @@ export default new Router({
     },
     {
       path: '/anti-corruption',
-      name: 'AntiCorruption',
-      component: AntiCorruption
+      name: 'AntiCorruptionPage',
+      component: AntiCorruptionPage
     },
     {
       path: '/contacts',
