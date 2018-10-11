@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import News from '@/components/News'
 import DocumentsOfCenterPage from '@/components/DocumentsOfCenterPage'
+import StructurePage from '@/components/StructurePage'
 import MaterialTechProvisionPage from '@/components/MaterialTechProvisionPage'
 import PublicationPage from '@/components/PublicationPage'
 import MethLibraryPage from '@/components/MethLibraryPage'
@@ -24,6 +25,11 @@ export default new Router({
       path: '/documents-of-center',
       name: 'DocumentsOfCenterPage',
       component: DocumentsOfCenterPage
+    },
+    {
+      path: '/structure',
+      name: 'StructurePage',
+      component: StructurePage
     },
     {
       path: '/material-tech-provision',
