@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import News from '@/components/News'
 import DocumentsOfCenterPage from '@/components/DocumentsOfCenterPage'
 import StructurePage from '@/components/StructurePage'
+import VacanciesPage from '@/components/VacanciesPage'
 import MaterialTechProvisionPage from '@/components/MaterialTechProvisionPage'
 import PublicationPage from '@/components/PublicationPage'
 import MethLibraryPage from '@/components/MethLibraryPage'
@@ -30,6 +31,11 @@ export default new Router({
       path: '/structure',
       name: 'StructurePage',
       component: StructurePage
+    },
+    {
+      path: '/vacancies',
+      name: 'VacanciesPage',
+      component: VacanciesPage
     },
     {
       path: '/material-tech-provision',
