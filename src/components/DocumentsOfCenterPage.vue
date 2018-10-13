@@ -31,7 +31,7 @@
         return {
           header: 'Документы Центра',
           docs: [],
-          textError: 'Загрузка документов'
+          textError: 'Документов нет'
         }
       },
       created() {
@@ -43,6 +43,9 @@
             .then(response => {
               this.docs = response.data.map((item) => {
                 console.log(item);
+                if (this.docs.length === 0) {
+                  this.textError = 'Документов нет'
+                }
                 return {
                   name: item.name,
                   link: item.link,
@@ -54,9 +57,7 @@
               this.textError = 'Ошибка загрузки документов'
           });
           console.log(this.docs);
-          if (this.docs.length === 0) {
-            this.textError = 'Документов нет'
-          }
+          this.textError = 'Загрузка документов'
         }
       }
     }
