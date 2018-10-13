@@ -4,6 +4,8 @@ import HelloWorld from '@/components/HelloWorld'
 import News from '@/components/News'
 import DocumentsOfCenterPage from '@/components/DocumentsOfCenterPage'
 import StructurePage from '@/components/StructurePage'
+import EducationStandardsPage from '@/components/EducationStandardsPage'
+import ScholarshipsPage from '@/components/ScholarshipsPage'
 import VacanciesPage from '@/components/VacanciesPage'
 import MaterialTechProvisionPage from '@/components/MaterialTechProvisionPage'
 import PublicationPage from '@/components/PublicationPage'
@@ -31,6 +33,16 @@ export default new Router({
       path: '/structure',
       name: 'StructurePage',
       component: StructurePage
+    },
+    {
+      path: '/education-standards',
+      name: 'EducationStandardsPage',
+      component: EducationStandardsPage
+    },
+    {
+      path: '/scholarships',
+      name: 'ScholarshipsPage',
+      component: ScholarshipsPage
     },
     {
       path: '/vacancies',

@@ -43,7 +43,7 @@
             <router-link to="/education-activity" class="sub-item">
               <span>Образовательная деятельность</span>
             </router-link>
-            <router-link to="/education-standarts" class="sub-item">
+            <router-link to="/education-standards" class="sub-item">
               <span>Образовательные стандарты</span>
             </router-link>
             <router-link to="/scholarships" class="sub-item">
