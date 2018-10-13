@@ -4,7 +4,7 @@
       <h1 class="ui medium header">Вакантные места для приема (перевода)</h1>
     </div>
     <div class="ui segment body">
-      <div class="ui small header" style="color: #204d74">Вакантных мест для приема обучающихся в 2017-2018 году нет</div>
+      <div class="ui small header">Вакантных мест для приема обучающихся в 2017-2018 году нет</div>
     </div>
   </div>
 </template>
