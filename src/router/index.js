@@ -8,6 +8,7 @@ import EducationStandardsPage from '@/components/EducationStandardsPage'
 import ScholarshipsPage from '@/components/ScholarshipsPage'
 import VacanciesPage from '@/components/VacanciesPage'
 import MaterialTechProvisionPage from '@/components/MaterialTechProvisionPage'
+import HostelPage from '@/components/HostelPage'
 import PublicationPage from '@/components/PublicationPage'
 import MethLibraryPage from '@/components/MethLibraryPage'
 import AntiCorruptionPage from '@/components/AntiCorruptionPage'
@@ -53,6 +54,11 @@ export default new Router({
       path: '/material-tech-provision',
       name: 'MaterialTechProvisionPage',
       component: MaterialTechProvisionPage
+    },
+    {
+      path: '/hostel',
+      name: 'HostelPage',
+      component: HostelPage
     },
     {
       path: '/publications',
