@@ -25,7 +25,7 @@
         :behaviors="['drag']"
         :controls="['zoomControl', 'fullscreenControl']"
         :placemarks="placemarks"
-        map-type="hybrid"
+        map-type="map"
         @map-was-initialized="initHandler"
       >
 
@@ -35,7 +35,7 @@
           :coords="[57.811781, 28.306505]"
           hint-content="Hint content 1"
           :balloon="{header: 'header', body: 'body', footer: 'footer'}"
-          :icon="{color: 'blue', glyph: 'hotel'}"
+          :icon="{color: 'blue', glyph: 'education'}"
           cluster-name="1"
         ></ymap-marker>
 
