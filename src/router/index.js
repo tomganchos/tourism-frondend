@@ -7,6 +7,8 @@ import StructurePage from '@/components/StructurePage'
 import MaterialTechProvisionPage from '@/components/MaterialTechProvisionPage'
 import ReportAboutUsPage from '@/components/ReportAboutUsPage'
 import PaidEducationServicesPage from '@/components/PaidEducationServicesPage'
+import NormativeBasePage from '@/components/NormativeBasePage'
+import CommonInformationPage from '@/components/CommonInformationPage'
 import EducationStandardsPage from '@/components/EducationStandardsPage'
 import ScholarshipsPage from '@/components/ScholarshipsPage'
 import VacanciesPage from '@/components/VacanciesPage'
@@ -54,6 +56,16 @@ export default new Router({
       path: '/paid-education-services',
       name: 'PaidEducationServicesPage',
       component: PaidEducationServicesPage
+    },
+    {
+      path: '/normative-base',
+      name: 'NormativeBasePage',
+      component: NormativeBasePage
+    },
+    {
+      path: '/common-information',
+      name: 'CommonInformationPage',
+      component: CommonInformationPage
     },
     {
       path: '/education-standards',
