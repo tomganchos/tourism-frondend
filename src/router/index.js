@@ -89,6 +89,11 @@ export default new Router({
       component: VacanciesPage
     },
     {
+      path: '/teaching-staff',
+      name: 'TeachingStaffPage',
+      component: TeachingStaffPage
+    },
+    {
       path: '/museum-about-education',
       name: 'MuseumAboutEducationPage',
       component: MuseumAboutEducationPage
