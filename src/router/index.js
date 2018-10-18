@@ -13,6 +13,11 @@ import ControlPage from '@/components/ControlPage'
 import EducationStandardsPage from '@/components/EducationStandardsPage'
 import ScholarshipsPage from '@/components/ScholarshipsPage'
 import VacanciesPage from '@/components/VacanciesPage'
+import TeachingStaffPage from '@/components/TeachingStaffPage'
+import LocalHistorySectionPage from '@/components/LocalHistorySectionPage'
+import TourismSectionPage from '@/components/TourismSectionPage'
+import MuseumSectionPage from '@/components/MuseumSectionPage'
+import TripSectionPage from '@/components/TripSectionPage'
 import MuseumAboutEducationPage from '@/components/MuseumAboutEducationPage'
 import HostelPage from '@/components/HostelPage'
 import PlansPage from '@/components/PlansPage'
@@ -92,6 +97,26 @@ export default new Router({
       path: '/teaching-staff',
       name: 'TeachingStaffPage',
       component: TeachingStaffPage
+    },
+    {
+      path: '/local-history-section',
+      name: 'LocalHistorySectionPage',
+      component: LocalHistorySectionPage
+    },
+    {
+      path: '/tourism-section',
+      name: 'TourismSectionPage',
+      component: TourismSectionPage
+    },
+    {
+      path: '/museum-section',
+      name: 'MuseumSectionPage',
+      component: MuseumSectionPage
+    },
+    {
+      path: '/trip-section',
+      name: 'TripSectionPage',
+      component: TripSectionPage
     },
     {
       path: '/museum-about-education',
