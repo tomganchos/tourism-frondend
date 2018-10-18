@@ -8,8 +8,10 @@ import EducationStandardsPage from '@/components/EducationStandardsPage'
 import ScholarshipsPage from '@/components/ScholarshipsPage'
 import VacanciesPage from '@/components/VacanciesPage'
 import MaterialTechProvisionPage from '@/components/MaterialTechProvisionPage'
+import ReportAboutUsPage from '@/components/ReportAboutUsPage'
 import MuseumAboutEducationPage from '@/components/MuseumAboutEducationPage'
 import HostelPage from '@/components/HostelPage'
+import PlansPage from '@/components/PlansPage'
 import PublicationPage from '@/components/PublicationPage'
 import GalleryPage from '@/components/GalleryPage'
 import MethLibraryPage from '@/components/MethLibraryPage'
@@ -43,6 +45,11 @@ export default new Router({
       component: MaterialTechProvisionPage
     },
     {
+      path: '/report-about-us',
+      name: 'ReportAboutUsPage',
+      component: ReportAboutUsPage
+    },
+    {
       path: '/education-standards',
       name: 'EducationStandardsPage',
       component: EducationStandardsPage
@@ -66,6 +73,11 @@ export default new Router({
       path: '/hostel',
       name: 'HostelPage',
       component: HostelPage
+    },
+    {
+      path: '/plans',
+      name: 'PlansPage',
+      component: PlansPage
     },
     {
       path: '/publications',
