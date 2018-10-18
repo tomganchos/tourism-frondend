@@ -22,7 +22,7 @@
       <div class="center-menu">
         <router-view/>
       </div>
-      <div class="visible-md visible-lg" style="margin: 5px 0">
+      <div class="visible-md visible-lg visible-xl" style="margin: 5px 0">
         <right-menu></right-menu>
       </div>
     </div>
@@ -41,11 +41,30 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   background-color: #edeef0;
+}
+h1, h2, h3, h4, h5, body, .ui.header, .ui.menu,
+.ui.list>.item .header {
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+h1 {
+  color: #204d74;
+  margin: 0;
+}
+h2 {
+  font-size: 1rem;
+  color: #204d74;
+  margin: 0;
+}
+h3 {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+  display: inline;
 }
 .center-menu {
   /*background-color: #0E566C;*/

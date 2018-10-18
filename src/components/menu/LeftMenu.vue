@@ -95,15 +95,15 @@
       <router-link to="touristroutes" class="item">
         <span>Туристские маршруты</span>
       </router-link>
-      <router-link to="museumabouteducation" class="item">
+      <router-link to="museum-about-education" class="item">
         <span>Музей истории народного образования Псковской области</span>
       </router-link>
       <router-link to="tripactivity" class="item">
         <span>Экскурсионная деятельность</span>
       </router-link>
-      <router-link to="innovation" class="item">
-        <span>Инновационная площадка</span>
-      </router-link>
+      <!--<router-link to="innovation" class="item">-->
+        <!--<span>Инновационная площадка</span>-->
+      <!--</router-link>-->
       <router-link to="hostel" class="item">
         <span>Общежитие(Хостел)</span>
       </router-link>
