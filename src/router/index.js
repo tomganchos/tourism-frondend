@@ -4,11 +4,12 @@ import HelloWorld from '@/components/HelloWorld'
 import News from '@/components/News'
 import DocumentsOfCenterPage from '@/components/DocumentsOfCenterPage'
 import StructurePage from '@/components/StructurePage'
+import MaterialTechProvisionPage from '@/components/MaterialTechProvisionPage'
+import ReportAboutUsPage from '@/components/ReportAboutUsPage'
+import PaidEducationServicesPage from '@/components/PaidEducationServicesPage'
 import EducationStandardsPage from '@/components/EducationStandardsPage'
 import ScholarshipsPage from '@/components/ScholarshipsPage'
 import VacanciesPage from '@/components/VacanciesPage'
-import MaterialTechProvisionPage from '@/components/MaterialTechProvisionPage'
-import ReportAboutUsPage from '@/components/ReportAboutUsPage'
 import MuseumAboutEducationPage from '@/components/MuseumAboutEducationPage'
 import HostelPage from '@/components/HostelPage'
 import PlansPage from '@/components/PlansPage'
@@ -48,6 +49,11 @@ export default new Router({
       path: '/report-about-us',
       name: 'ReportAboutUsPage',
       component: ReportAboutUsPage
+    },
+    {
+      path: '/paid-education-services',
+      name: 'PaidEducationServicesPage',
+      component: PaidEducationServicesPage
     },
     {
       path: '/education-standards',
