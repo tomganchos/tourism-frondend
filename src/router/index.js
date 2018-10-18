@@ -9,6 +9,7 @@ import ReportAboutUsPage from '@/components/ReportAboutUsPage'
 import PaidEducationServicesPage from '@/components/PaidEducationServicesPage'
 import NormativeBasePage from '@/components/NormativeBasePage'
 import CommonInformationPage from '@/components/CommonInformationPage'
+import ControlPage from '@/components/ControlPage'
 import EducationStandardsPage from '@/components/EducationStandardsPage'
 import ScholarshipsPage from '@/components/ScholarshipsPage'
 import VacanciesPage from '@/components/VacanciesPage'
@@ -66,6 +67,11 @@ export default new Router({
       path: '/common-information',
       name: 'CommonInformationPage',
       component: CommonInformationPage
+    },
+    {
+      path: '/control',
+      name: 'ControlPage',
+      component: ControlPage
     },
     {
       path: '/education-standards',
