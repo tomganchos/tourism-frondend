@@ -1,13 +1,15 @@
 <template>
   <div>
     <div class="ui segment head">
-      <div class="ui medium header">Противодействие коррупции</div>
+      <h1 class="ui medium header">Противодействие коррупции</h1>
     </div>
     <div class="ui segment body">
       <div>
         <strong>Телефон доверия по противодействию коррупции: </strong><a class="tel" href="tel:88001006011">8-800-100-60-11</a>
       </div>
-      <div class="ui relaxed divided list">
+      <div v-if="docs.length === 0">
+      </div>
+      <div v-else class="ui relaxed divided list">
         <div class="item" v-for="doc in docs" :key="doc.name">
           <div class="item-icon">
             <i class="file alternate outline icon"></i>
@@ -29,7 +31,8 @@
     data() {
       return {
         header: 'Противодействие коррупции',
-        docs: []
+        docs: [],
+        textError: 'Документов нет'
       }
     },
     created() {
@@ -40,15 +43,21 @@
         axios.get(host + '/docs?category=anti-corruption')
           .then(response => {
             this.docs = response.data.map((item) => {
-              console.log(item);
+              if (this.docs.length === 0) {
+                this.textError = 'Документов нет'
+              }
               return {
                 name: item.name,
                 link: item.link,
                 category: item.category
               }
             })
-          });
+          }).catch(err => {
+          console.log(err);
+          this.textError = 'Ошибка загрузки документов'
+        });
         console.log(this.docs);
+            this.textError = 'Загрузка документов'
       }
     }
   }
