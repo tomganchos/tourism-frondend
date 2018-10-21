@@ -13,6 +13,8 @@ import ControlPage from '@/components/ControlPage'
 import EducationStandardsPage from '@/components/EducationStandardsPage'
 import ScholarshipsPage from '@/components/ScholarshipsPage'
 import VacanciesPage from '@/components/VacanciesPage'
+import AdministrationPage from '@/components/AdministrationPage'
+import PersonalPage from '@/components/PersonalPage'
 import TeachingStaffPage from '@/components/TeachingStaffPage'
 import LocalHistorySectionPage from '@/components/LocalHistorySectionPage'
 import TourismSectionPage from '@/components/TourismSectionPage'
@@ -92,6 +94,16 @@ export default new Router({
       path: '/vacancies',
       name: 'VacanciesPage',
       component: VacanciesPage
+    },
+    {
+      path: '/administration',
+      name: 'AdministrationPage',
+      component: AdministrationPage
+    },
+    {
+      path: '/personal',
+      name: 'PersonalPage',
+      component: PersonalPage
     },
     {
       path: '/teaching-staff',

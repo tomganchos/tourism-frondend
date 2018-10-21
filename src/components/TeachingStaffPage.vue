@@ -27,7 +27,7 @@
     name: "TeachingStaffPage",
     data() {
       return {
-        header: 'Отчёт о результатах самообследования',
+        header: 'Педагогический состав',
         docs: []
       }
     },
@@ -36,7 +36,7 @@
     },
     methods: {
       getDocs() {
-        axios.get(host + '/docs?category=report-about-us')
+        axios.get(host + '/docs?category=teaching-staff')
           .then(response => {
             this.docs = response.data.map((item) => {
               console.log(item);
