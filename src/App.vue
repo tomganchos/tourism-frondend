@@ -26,7 +26,7 @@
         <right-menu></right-menu>
       </div>
     </div>
-
+    <div style="text-align: center; margin-bottom: 10px">Псков, 2018</div>
   </div>
 </template>
 
