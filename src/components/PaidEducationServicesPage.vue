@@ -4,7 +4,7 @@
       <div class="ui medium header">{{header}}</div>
     </div>
     <div class="ui segment body">
-      <div class="ui relaxed divided list">
+      <div v-if="docs.length !== 0" class="ui relaxed divided list">
         <div class="item" v-for="doc in docs" :key="doc.name">
           <div class="item-icon">
             <i class="file alternate outline icon"></i>

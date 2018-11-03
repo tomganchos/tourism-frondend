@@ -6,7 +6,7 @@
     <div class="ui segment body">
       <h2 v-if="docs.length === 0">Документов нет</h2>
       <h2 v-else>Просмотр документов: </h2>
-      <div class="ui relaxed divided list">
+      <div v-if="docs.length !== 0" class="ui relaxed divided list">
         <div class="item" v-for="doc in docs.slice().reverse()" :key="doc.name">
           <div class="item-icon">
             <i class="file alternate outline icon"></i>
