@@ -11,7 +11,7 @@
 
       </div>
 
-      <a class="item first">
+      <a class="item first" href="https://минобрнауки.рф" target="_blank" rel="noopener">
         <div class="link-img">
           <img src="http://turizmpskov.ru/image/links/Min_obr_i_nauki.png">
         </div>
@@ -19,7 +19,7 @@
           Министерство образования и науки Российской Федерации
         </div>
       </a>
-      <a class="item">
+      <a class="item" href="http://www.edu.ru" target="_blank" rel="noopener">
         <div class="link-img">
           <img src="http://turizmpskov.ru/image/links/fed_port.png">
         </div>
@@ -27,7 +27,7 @@
           Федеральный портал "Российское образование"
         </div>
       </a>
-      <a class="item">
+      <a class="item" href="http://window.edu.ru" target="_blank" rel="noopener">
         <div class="link-img">
           <img src="http://turizmpskov.ru/image/links/info_sistema.gif">
         </div>
@@ -35,7 +35,7 @@
           Информационная система "Единое окно доступа к образовательным ресурсам"
         </div>
       </a>
-      <a class="item">
+      <a class="item" href="http://school-collection.edu.ru" target="_blank" rel="noopener">
         <div class="link-img">
           <img src="http://turizmpskov.ru/image/links/edin_kollektion.png">
         </div>
@@ -43,7 +43,7 @@
           Единая коллекция цифровых образовательных ресурсов
         </div>
       </a>
-      <a class="item">
+      <a class="item" href="http://fcior.edu.ru" target="_blank" rel="noopener">
         <div class="link-img">
           <img src="http://turizmpskov.ru/image/links/fed_resurs.png">
         </div>
@@ -51,7 +51,7 @@
           Федеральный центр информационно-образовательных ресурсов
         </div>
       </a>
-      <a class="item">
+      <a class="item" href="http://turcentrrf.ru" target="_blank" rel="noopener">
         <div class="link-img">
           <img src="http://turizmpskov.ru/image/links/turcentrrf.png">
         </div>
